@@ -38,7 +38,7 @@ let ItemsController = class ItemsController {
         { id: 20, name: 'Complain/Feedback', category: 'General' },
         { id: 21, name: 'Appointment Request', category: 'General' },
         { id: 22, name: 'Branch / ATM Information', category: 'General' },
-        { id: 23, name: 'Regulatory Information', category: 'General' }
+        { id: 23, name: 'Regulatory Information', category: 'General' },
     ];
     getTopics(searchTerm) {
         if (!searchTerm) {
