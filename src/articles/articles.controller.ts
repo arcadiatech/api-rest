@@ -10,6 +10,7 @@ interface DetailedArticle {
   title: string;
   content: string;
   video: string;
+  related_articles: Article[];
 }
 
 interface SubcategoryGroup {
@@ -63,7 +64,17 @@ export class ArticlesController {
       id: parseInt(id, 10),
       title: 'Sample Article',
       content: 'This is sample content for the article.',
-      video: 'https://arcadia-platform-s3.s3.us-east-2.amazonaws.com/13383670_540_960_60fps.mp4'
+      video: 'https://arcadia-platform-s3.s3.us-east-2.amazonaws.com/13383670_540_960_60fps.mp4',
+      related_articles: [
+        {
+              id: '003',
+              title: 'Setting up two-factor authentication'
+            },
+            {
+              id: '004',
+              title: 'Recognizing phishing attempts'
+            }
+      ]
     };
   }
 }
